@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcin.ble.Activity_Archives">
+
+    <TextView
+        android:id="@+id/titleArchives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Archiwum" />
+
+    <Button
+        android:id="@+id/archive_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Archiwum_szczegóły"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/wsteczA"
+
+        />
+    <Button
+        android:id="@+id/wsteczA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Wstecz (poczekalnia)" />
+
+</RelativeLayout>
