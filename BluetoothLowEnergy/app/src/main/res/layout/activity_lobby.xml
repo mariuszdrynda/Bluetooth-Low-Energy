@@ -5,54 +5,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.marcin.ble.MainActivity">
+    tools:context="pz.bluetoothlowenergy.Activity_Lobby">
 
     <TextView
-        android:id="@+id/NickTxt"
+        android:id="@+id/titleLobby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Nickname:" />
-
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/NickTxt"/>
-
-
-
-
-    <TextView
-        android:id="@+id/PasswordTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password:"
-        android:layout_below="@+id/editText1"
-        android:layout_centerHorizontal="true"
-
-        />
-
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/PasswordTxt"
-        />
+        android:text="Lobby" />
 
     <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
+        android:id="@+id/Chat"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="zaloguj"
-        android:layout_below="@+id/editText2"
+        android:text="Chat"
         android:layout_centerHorizontal="true"
+        android:layout_above="@+id/History" />
 
-        />
+    <Button
+        android:id="@+id/History"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Archiwum"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/wstecz" />
 
-
-
+    <Button
+        android:id="@+id/wstecz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Wstecz (zmień nazwę)" />
 </RelativeLayout>
