@@ -23,9 +23,6 @@
         android:layout_below="@+id/NickTxt"/>
 
 
-
-
-
     <Button
         android:id="@+id/login"
         android:layout_width="wrap_content"
