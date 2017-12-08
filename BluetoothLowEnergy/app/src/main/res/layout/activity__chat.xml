@@ -10,10 +10,10 @@
         android:id="@+id/wsteczLobby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:text="Wstecz (Lobby)"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="250dp"
@@ -32,6 +32,18 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/zapiszLobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="initZapisz"
+        android:text="Zapisz"
+        app:layout_constraintTop_toBottomOf="@+id/wsteczLobby"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 
     <TextView
         android:layout_marginTop="10dp"
