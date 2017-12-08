@@ -29,6 +29,8 @@ public class Activity_Chat extends AppCompatActivity {
         btnSend = (Button) findViewById(R.id.btnSend);
         etSend = (EditText) findViewById(R.id.editText);
         LocalBroadcastManager.getInstance(this).registerReceiver(mReceiver, new IntentFilter("incomingMessage"));
+        String firstMessage = "Rozmawiaszs z: "+MainActivity.text;
+        send(firstMessage);
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +39,12 @@ public class Activity_Chat extends AppCompatActivity {
                 etSend.setText("");
             }
         });
+    }
+
+    private void send(String firstMessage){
+        byte[] bytes = firstMessage.getBytes(Charset.defaultCharset());
+        Activity_Lobby.mBluetoothConnection.write(bytes);
+        etSend.setText("");
     }
 
     private void initWsteczLobby() {
