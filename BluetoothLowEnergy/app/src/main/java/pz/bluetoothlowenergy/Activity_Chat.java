@@ -1,29 +1,27 @@
 package pz.bluetoothlowenergy;
 
-import android.content.Context;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Environment;
-import android.content.IntentFilter;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
-
-import java.nio.charset.Charset;
 
 public class Activity_Chat extends AppCompatActivity {
 
@@ -88,8 +86,8 @@ public class Activity_Chat extends AppCompatActivity {
 
         String DANE = incomingMessage.getText().toString();
 
-        //String[] temp = DANE.split("%n");
-        String[] temp = DANE;
+        String[] temp = DANE.split(System.getProperty("line.separator"));
+
 
         numberOfMassages = temp.length;
         String fileid = timeOfEntry.toString()+"-"+conversationID+"-"+numberOfMassages;//identyfikator pliku jego unikatowe dane
@@ -125,7 +123,7 @@ public class Activity_Chat extends AppCompatActivity {
         }
     }
 
-    private void saveToFile(String DANE, String path, String fileid) throws IOException {
+    private void saveToFile(String[] temp, String path, String fileid) throws IOException {
         File file = new File(path, fileid + ".txt");
         FileWriter fstream = new FileWriter(file, true);
         BufferedWriter out = new BufferedWriter(fstream);
