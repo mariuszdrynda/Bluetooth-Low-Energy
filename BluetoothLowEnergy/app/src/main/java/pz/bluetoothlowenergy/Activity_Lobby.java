@@ -45,7 +45,7 @@ public class Activity_Lobby extends AppCompatActivity implements AdapterView.OnI
             }
         });
     }
-    /*private void initChat() {
+    private void initChat() {
         Chat = (Button) findViewById(R.id.Chat);
         Chat.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -54,7 +54,7 @@ public class Activity_Lobby extends AppCompatActivity implements AdapterView.OnI
                 startActivity(toy);
             }
         });
-    }*/
+    }
     /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -198,7 +198,7 @@ public class Activity_Lobby extends AppCompatActivity implements AdapterView.OnI
         setContentView(R.layout.activity_lobby);
         init();
         initWstecz();
-        //initChat();
+        initChat();
         //Button btnONOFF = (Button) findViewById(R.id.btnONOFF);
         //btnEnableDisable_Discoverable = (Button) findViewById(R.id.btnDiscoverable_on_off);
         lvNewDevices = (ListView) findViewById(R.id.lvNewDevices);
@@ -228,8 +228,8 @@ public class Activity_Lobby extends AppCompatActivity implements AdapterView.OnI
             @Override
             public void onClick(View view) {
                 startConnection();
-                Intent toy = new Intent(Activity_Lobby.this,Activity_Chat.class);
-                startActivity(toy);
+                //Intent toy = new Intent(Activity_Lobby.this,Activity_Chat.class);
+                //startActivity(toy);
             }
         });
         /*btnSend.setOnClickListener(new View.OnClickListener() {

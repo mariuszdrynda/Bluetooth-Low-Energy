@@ -71,13 +71,13 @@
         android:layout_below="@+id/editText"
         android:id="@+id/incomingMessage"/>-->
 
-    <!--<Button
+    <Button
         android:id="@+id/Chat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Chat"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/History" />-->
+        android:layout_above="@+id/History" />
 
     <Button
         android:id="@+id/History"
