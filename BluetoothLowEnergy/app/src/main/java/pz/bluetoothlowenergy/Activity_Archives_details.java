@@ -65,8 +65,8 @@ public class Activity_Archives_details extends AppCompatActivity {
         TextView output=(TextView) findViewById(R.id.textViewZawartosc);
         //output.setMovementMethod(new ScrollingMovementMethod());
         // Assuming that 'output' is the id of your TextView
-        for (int i = 0; i < 7; i++)
-            textToPut.append(textToPut.toString());
+        //for (int i = 0; i < 7; i++)
+        //    textToPut.append(textToPut.toString());
         output.setText(textToPut);
 
 

@@ -86,9 +86,11 @@ public class Activity_Chat extends AppCompatActivity {
     }
     public void initZapisz(View v) throws IOException {
 
-        String DANE = "Tomek: Witaj%nWojtek: Siemka%nTomek: Co tu sie dzieje?";
+        String DANE = incomingMessage.getText().toString();
 
-        String[] temp = DANE.split("%n");
+        //String[] temp = DANE.split("%n");
+        String[] temp = DANE;
+
         numberOfMassages = temp.length;
         String fileid = timeOfEntry.toString()+"-"+conversationID+"-"+numberOfMassages;//identyfikator pliku jego unikatowe dane
         String path = Environment.getExternalStorageDirectory().toString()+"/Czat_Archiwum/";//sciezka
@@ -123,7 +125,7 @@ public class Activity_Chat extends AppCompatActivity {
         }
     }
 
-    private void saveToFile(String[] temp, String path, String fileid) throws IOException {
+    private void saveToFile(String DANE, String path, String fileid) throws IOException {
         File file = new File(path, fileid + ".txt");
         FileWriter fstream = new FileWriter(file, true);
         BufferedWriter out = new BufferedWriter(fstream);
