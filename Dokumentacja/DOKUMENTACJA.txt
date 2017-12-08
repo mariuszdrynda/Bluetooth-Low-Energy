@@ -1,0 +1,43 @@
+DOKUMENTACJA
+
+Bluetooth Low-Energy Communicator
+
+Projekt polega na storzeniu (zaprojektowaniu, zaimplementowaniu i przetestowaniu) aplikacji mobilnej na urz¹dzenia z systemem Android - komunikatora wykorzystuj¹cego Bluetooth do przesy³ania danych. Za³o¿eniem projektu jest wykorzystanie tylko Bluetooth do komunikacji oraz rezygnacjê z zewnêtrznego serwera.
+
+Sk³ad grupy:
+
+Mariusz Drynda, Marcin G³¹ba, Tomasz Bigorowski.
+
+===============================================================================================================
+Review pierwszego sprintu:
+
+W trakcie pierwszego sprintu zosta³o zrobione:
+
+- Stworzenie szkieletu aplikacji,
+- Stworzenie UML,
+- Projekt aplikacji z podzia³em na aktywnoœci,
+- Stworzenie aktywnoœci aplikacji oraz przejœæ miedzy nimi,
+- Implementacja parowania miêdzy urz¹dzeniami i przesy³ania wiadomoœci,
+- Funkcjonalnoœæ: zapisywanie plików na karcie.
+
+W trakcie nastêpnego sprintu zostanie zrobione (usprawnione):
+
+- Po³¹czenie ze sob¹ wszystkich funkcjonalnoœci,
+- Stworzenie archiwum, wktórym bêd¹ zapisane wszystkie rozmowy.
+
+===============================================================================================================
+Review drugiego (ostatniego) sprintu:
+
+W trakcie drugiego sprintu zosta³o zrobione:
+
+- Po³¹czenie aktywnoœci GUI z funkcjonalnoœci¹ odpowiedziln¹ za komunikacjê urz¹dzeñ,
+- Stworzenie  mo¿liwoœci zapisywania wiadmoœci czatu, mo¿liwoœæ odczytania i usuwania,
+- Aktywnoœæ logowanie - koniecznoœæ podania nicku,
+- Po³¹czenie ze sob¹ wszystkich funkcjonalnoœci,
+- Podpiêcie archium pod czat,
+- Napisanie dokumentacji.
+Dodatkowo debuggowanie, wyszukiwanie b³êdów i ogólne poprawki
+
+Jak mo¿na usprawniæ apikacjê:
+
+- Do aplikacji mo¿na dodaæ obs³ugê wiêcej ni¿ dwóch osób, stworzenie tzw. pokoi, gdzie komunikacja odbywa³aby siê w grupach wieloosobowych.
